@@ -1,0 +1,45 @@
+종목 Stock
+ㄴ종목명 stockId
+ㄴ*원시 데이터 RowData : 종목 생성시 첫 1회만 입력되는 데이터
+	ㄴ보유량 holding
+	ㄴ평균가 avgPrice
+ㄴ*갱신 데이터 UpdatedData : 종목 사용시마다 재입력되는 데이터
+	ㄴ현재가 currentPrice
+ㄴ*파생 데이터 DerviedData : 직접적인 입력없이 계산 가능한 데이터
+	ㄴ수익 profit
+	ㄴ수익률 profitrRate
+	ㄴ수량 quantity
+	ㄴ원금 principal
+ㄴ*계산 데이터 CalculatedData : 계층 구조 완성시 계산 가능한 데이터
+	ㄴ비중 weight
+ㄴ*비교 데이터 ComparedData : 비교군 존재시 계산 가능한 데이터
+	ㄴ변동률 changeRate
+	ㄴ비중 차이 weightGap
+	ㄴ수익 차이 profitGap
+	ㄴ수익률 차이 profitRateGap
+ㄴ*계층 Hierarchy
+	ㄴ계층명 hierarchyId
+	ㄴ부모 parent
+	ㄴ자식[] children
+	ㄴ자식수 childCount
+ㄴ*기록 데이터 RecordedData : 종목별로 가지고 있고, 계산되어야 하는 데이터 
+	ㄴ실현 수익 realizedProfit
+	ㄴ대기금 pendingFunds
+ㄴ*기타 데이터 Ect
+	ㄴ등급 grade
+
+매매 리스트 TradingType
+ㄴ*매매[] trades
+ㄴ매매일 date
+ㄴ매수량 totalBuyVolum
+ㄴ매도량 totalSellVolum
+ㄴ총수익 totalRealizedProfit
+ㄴ총수익률 totalProfitRate
+
+매매 Trade
+ㄴ종목명 stockId
+ㄴ매매종류 orderType
+ㄴ체결량 volum
+ㄴ체결가격 executedPrice
+ㄴ수익 realizedProfit
+ㄴ수익률 profitRate
