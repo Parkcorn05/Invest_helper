@@ -1,0 +1,15 @@
+#출력 함수의 종류
+printf(), puts(), putchar(), sprintf()
+
+# int putchar( int )
+한개의 문자 출력
+
+#int puts(const char*)
+문자열 출력, 자동 줄 바꿈
+
+#int printf(const char*, ...)
+포멧형 출력 함수 (포멧 : 출력 형태) = 원하는 형태로 출력을 조절할 수 있는 함수
+
+#출처
+[C언어] 표준 출력 함수 https://m.blog.naver.com/luitz79/70095058983
+C언어 문자열 입출력 가이드 https://coding-by-head.tistory.com/entry/c-stdlib-gets-puts
